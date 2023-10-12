@@ -1,4 +1,5 @@
 const { menubar } = require("menubar");
+const path = require("path");
 
 const baseUrl = "https://app.graphite.dev/";
 
@@ -7,7 +8,7 @@ const mb = menubar({
     width: 500,
     height: 800,
   },
-  icon: "./icon.png",
+  icon: path.join(__dirname, "icon.png"),
   index: baseUrl,
 });
 
