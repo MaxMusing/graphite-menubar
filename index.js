@@ -10,6 +10,7 @@ const mb = menubar({
   },
   icon: path.join(__dirname, "icon.png"),
   index: baseUrl,
+  showOnAllWorkspaces: false,
 });
 
 mb.on("show", () => {
